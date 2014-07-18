@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B30DFB191976E94D0064139C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30DFB181976E94D0064139C /* Foundation.framework */; };
+		B30DFB1B1976E94D0064139C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30DFB1A1976E94D0064139C /* CoreGraphics.framework */; };
+		B30DFB1D1976E94D0064139C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30DFB1C1976E94D0064139C /* UIKit.framework */; };
+		B30DFB231976E94D0064139C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B30DFB211976E94D0064139C /* InfoPlist.strings */; };
+		B30DFB251976E94D0064139C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B30DFB241976E94D0064139C /* main.m */; };
+		B30DFB291976E94D0064139C /* ARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30DFB281976E94D0064139C /* ARAppDelegate.m */; };
+		B30DFB2C1976E94D0064139C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30DFB2A1976E94D0064139C /* Main.storyboard */; };
+		B30DFB2F1976E94D0064139C /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30DFB2E1976E94D0064139C /* ARViewController.m */; };
+		B30DFB311976E94D0064139C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30DFB301976E94D0064139C /* Images.xcassets */; };
+		B30DFB381976E94E0064139C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30DFB371976E94E0064139C /* XCTest.framework */; };
+		B30DFB391976E94E0064139C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30DFB181976E94D0064139C /* Foundation.framework */; };
+		B30DFB3A1976E94E0064139C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30DFB1C1976E94D0064139C /* UIKit.framework */; };
+		B30DFB421976E94E0064139C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B30DFB401976E94E0064139C /* InfoPlist.strings */; };
+		B30DFB441976E94E0064139C /* location2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30DFB431976E94E0064139C /* location2Tests.m */; };
+		B30DFB521976E9850064139C /* ARLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B30DFB511976E9850064139C /* ARLocation.m */; };
+		B30DFB541976E9AA0064139C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30DFB531976E9AA0064139C /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B30DFB3B1976E94E0064139C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B30DFB0D1976E94D0064139C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B30DFB141976E94D0064139C;
+			remoteInfo = location2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B30DFB151976E94D0064139C /* Locomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30DFB181976E94D0064139C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B30DFB1A1976E94D0064139C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B30DFB1C1976E94D0064139C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B30DFB201976E94D0064139C /* Locomatic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Locomatic-Info.plist"; sourceTree = "<group>"; };
+		B30DFB221976E94D0064139C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B30DFB241976E94D0064139C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B30DFB261976E94D0064139C /* Locomatic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Locomatic-Prefix.pch"; sourceTree = "<group>"; };
+		B30DFB271976E94D0064139C /* ARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAppDelegate.h; sourceTree = "<group>"; };
+		B30DFB281976E94D0064139C /* ARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAppDelegate.m; sourceTree = "<group>"; };
+		B30DFB2B1976E94D0064139C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B30DFB2D1976E94D0064139C /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		B30DFB2E1976E94D0064139C /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
+		B30DFB301976E94D0064139C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B30DFB361976E94E0064139C /* LocomaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocomaticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30DFB371976E94E0064139C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B30DFB3F1976E94E0064139C /* LocomaticTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocomaticTests-Info.plist"; sourceTree = "<group>"; };
+		B30DFB411976E94E0064139C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B30DFB431976E94E0064139C /* location2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = location2Tests.m; sourceTree = "<group>"; };
+		B30DFB501976E9850064139C /* ARLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocation.h; sourceTree = "<group>"; };
+		B30DFB511976E9850064139C /* ARLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLocation.m; sourceTree = "<group>"; };
+		B30DFB531976E9AA0064139C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B30DFB121976E94D0064139C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30DFB541976E9AA0064139C /* CoreLocation.framework in Frameworks */,
+				B30DFB1B1976E94D0064139C /* CoreGraphics.framework in Frameworks */,
+				B30DFB1D1976E94D0064139C /* UIKit.framework in Frameworks */,
+				B30DFB191976E94D0064139C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30DFB331976E94E0064139C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30DFB381976E94E0064139C /* XCTest.framework in Frameworks */,
+				B30DFB3A1976E94E0064139C /* UIKit.framework in Frameworks */,
+				B30DFB391976E94E0064139C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B30DFB0C1976E94D0064139C = {
+			isa = PBXGroup;
+			children = (
+				B30DFB1E1976E94D0064139C /* Locomatic */,
+				B30DFB3D1976E94E0064139C /* LocomaticTests */,
+				B30DFB171976E94D0064139C /* Frameworks */,
+				B30DFB161976E94D0064139C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B30DFB161976E94D0064139C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B30DFB151976E94D0064139C /* Locomatic.app */,
+				B30DFB361976E94E0064139C /* LocomaticTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B30DFB171976E94D0064139C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B30DFB531976E9AA0064139C /* CoreLocation.framework */,
+				B30DFB181976E94D0064139C /* Foundation.framework */,
+				B30DFB1A1976E94D0064139C /* CoreGraphics.framework */,
+				B30DFB1C1976E94D0064139C /* UIKit.framework */,
+				B30DFB371976E94E0064139C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B30DFB1E1976E94D0064139C /* Locomatic */ = {
+			isa = PBXGroup;
+			children = (
+				B30DFB271976E94D0064139C /* ARAppDelegate.h */,
+				B30DFB281976E94D0064139C /* ARAppDelegate.m */,
+				B30DFB501976E9850064139C /* ARLocation.h */,
+				B30DFB511976E9850064139C /* ARLocation.m */,
+				B30DFB2A1976E94D0064139C /* Main.storyboard */,
+				B30DFB2D1976E94D0064139C /* ARViewController.h */,
+				B30DFB2E1976E94D0064139C /* ARViewController.m */,
+				B30DFB301976E94D0064139C /* Images.xcassets */,
+				B30DFB1F1976E94D0064139C /* Supporting Files */,
+			);
+			name = Locomatic;
+			path = location2;
+			sourceTree = "<group>";
+		};
+		B30DFB1F1976E94D0064139C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B30DFB201976E94D0064139C /* Locomatic-Info.plist */,
+				B30DFB211976E94D0064139C /* InfoPlist.strings */,
+				B30DFB241976E94D0064139C /* main.m */,
+				B30DFB261976E94D0064139C /* Locomatic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B30DFB3D1976E94E0064139C /* LocomaticTests */ = {
+			isa = PBXGroup;
+			children = (
+				B30DFB431976E94E0064139C /* location2Tests.m */,
+				B30DFB3E1976E94E0064139C /* Supporting Files */,
+			);
+			name = LocomaticTests;
+			path = location2Tests;
+			sourceTree = "<group>";
+		};
+		B30DFB3E1976E94E0064139C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B30DFB3F1976E94E0064139C /* LocomaticTests-Info.plist */,
+				B30DFB401976E94E0064139C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B30DFB141976E94D0064139C /* Locomatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B30DFB471976E94E0064139C /* Build configuration list for PBXNativeTarget "Locomatic" */;
+			buildPhases = (
+				B30DFB111976E94D0064139C /* Sources */,
+				B30DFB121976E94D0064139C /* Frameworks */,
+				B30DFB131976E94D0064139C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locomatic;
+			productName = location2;
+			productReference = B30DFB151976E94D0064139C /* Locomatic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B30DFB351976E94E0064139C /* LocomaticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B30DFB4A1976E94E0064139C /* Build configuration list for PBXNativeTarget "LocomaticTests" */;
+			buildPhases = (
+				B30DFB321976E94E0064139C /* Sources */,
+				B30DFB331976E94E0064139C /* Frameworks */,
+				B30DFB341976E94E0064139C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B30DFB3C1976E94E0064139C /* PBXTargetDependency */,
+			);
+			name = LocomaticTests;
+			productName = location2Tests;
+			productReference = B30DFB361976E94E0064139C /* LocomaticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B30DFB0D1976E94D0064139C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = alexryan;
+				TargetAttributes = {
+					B30DFB141976E94D0064139C = {
+						DevelopmentTeam = 4H5P3P832L;
+					};
+					B30DFB351976E94E0064139C = {
+						TestTargetID = B30DFB141976E94D0064139C;
+					};
+				};
+			};
+			buildConfigurationList = B30DFB101976E94D0064139C /* Build configuration list for PBXProject "Locomatic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B30DFB0C1976E94D0064139C;
+			productRefGroup = B30DFB161976E94D0064139C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B30DFB141976E94D0064139C /* Locomatic */,
+				B30DFB351976E94E0064139C /* LocomaticTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B30DFB131976E94D0064139C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30DFB311976E94D0064139C /* Images.xcassets in Resources */,
+				B30DFB231976E94D0064139C /* InfoPlist.strings in Resources */,
+				B30DFB2C1976E94D0064139C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30DFB341976E94E0064139C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30DFB421976E94E0064139C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B30DFB111976E94D0064139C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30DFB251976E94D0064139C /* main.m in Sources */,
+				B30DFB2F1976E94D0064139C /* ARViewController.m in Sources */,
+				B30DFB291976E94D0064139C /* ARAppDelegate.m in Sources */,
+				B30DFB521976E9850064139C /* ARLocation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30DFB321976E94E0064139C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30DFB441976E94E0064139C /* location2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B30DFB3C1976E94E0064139C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B30DFB141976E94D0064139C /* Locomatic */;
+			targetProxy = B30DFB3B1976E94E0064139C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B30DFB211976E94D0064139C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B30DFB221976E94D0064139C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B30DFB2A1976E94D0064139C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B30DFB2B1976E94D0064139C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B30DFB401976E94E0064139C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B30DFB411976E94E0064139C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B30DFB451976E94E0064139C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex Ryan (4H5P3P832L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B30DFB461976E94E0064139C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex Ryan (4H5P3P832L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B30DFB481976E94E0064139C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "location2/Locomatic-Prefix.pch";
+				INFOPLIST_FILE = "location2/Locomatic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Locomatic;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B30DFB491976E94E0064139C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "location2/Locomatic-Prefix.pch";
+				INFOPLIST_FILE = "location2/Locomatic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = Locomatic;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B30DFB4B1976E94E0064139C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/location2.app/location2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "location2/location2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "location2Tests/LocomaticTests-Info.plist";
+				PRODUCT_NAME = LocomaticTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B30DFB4C1976E94E0064139C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/location2.app/location2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "location2/location2-Prefix.pch";
+				INFOPLIST_FILE = "location2Tests/LocomaticTests-Info.plist";
+				PRODUCT_NAME = LocomaticTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B30DFB101976E94D0064139C /* Build configuration list for PBXProject "Locomatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B30DFB451976E94E0064139C /* Debug */,
+				B30DFB461976E94E0064139C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B30DFB471976E94E0064139C /* Build configuration list for PBXNativeTarget "Locomatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B30DFB481976E94E0064139C /* Debug */,
+				B30DFB491976E94E0064139C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B30DFB4A1976E94E0064139C /* Build configuration list for PBXNativeTarget "LocomaticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B30DFB4B1976E94E0064139C /* Debug */,
+				B30DFB4C1976E94E0064139C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B30DFB0D1976E94D0064139C /* Project object */;
+}

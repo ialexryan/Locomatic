@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="odJ-7I-ftb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="556-MV-rZx">
+            <objects>
+                <viewController id="odJ-7I-ftb" customClass="ARViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qIm-TI-7gk"/>
+                        <viewControllerLayoutGuide type="bottom" id="dQZ-08-bEj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O15-4k-l6R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYB-B6-oL5">
+                                <rect key="frame" x="116" y="269" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getLocation:" destination="odJ-7I-ftb" eventType="touchUpInside" id="Est-l4-BEK"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9GX-ZU-izL">
+                                <rect key="frame" x="136" y="422" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="locationTrackingSwitchToggled:" destination="odJ-7I-ftb" eventType="valueChanged" id="XyC-Is-hhp"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Location Tracking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xC-G1-n27">
+                                <rect key="frame" x="92" y="393" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="qPw-Vb-5S4">
+                                <rect key="frame" x="20" y="99" width="280" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4xC-G1-n27" secondAttribute="centerX" id="0WX-7L-W6W"/>
+                            <constraint firstAttribute="centerX" secondItem="qPw-Vb-5S4" secondAttribute="centerX" id="6cM-Zy-EUf"/>
+                            <constraint firstItem="9GX-ZU-izL" firstAttribute="top" secondItem="4xC-G1-n27" secondAttribute="bottom" constant="8" id="8Hv-LZ-4AR"/>
+                            <constraint firstItem="wYB-B6-oL5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qPw-Vb-5S4" secondAttribute="bottom" constant="8" id="9Ws-se-q1P"/>
+                            <constraint firstAttribute="centerY" secondItem="wYB-B6-oL5" secondAttribute="centerY" id="A3Y-ex-3qa"/>
+                            <constraint firstAttribute="centerX" secondItem="9GX-ZU-izL" secondAttribute="centerX" id="Eoi-l2-s01"/>
+                            <constraint firstItem="qPw-Vb-5S4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qIm-TI-7gk" secondAttribute="bottom" constant="44" id="Fe7-Rq-sA1"/>
+                            <constraint firstItem="dQZ-08-bEj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9GX-ZU-izL" secondAttribute="bottom" constant="44" id="b0p-o7-wff"/>
+                            <constraint firstAttribute="centerX" secondItem="wYB-B6-oL5" secondAttribute="centerX" id="qbD-g7-5HN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getLocationButton" destination="wYB-B6-oL5" id="PQA-vx-YSk"/>
+                        <outlet property="locationLabel" destination="qPw-Vb-5S4" id="3p7-lU-bCn"/>
+                        <outlet property="locationTrackingSwitch" destination="9GX-ZU-izL" id="BPd-Ji-DB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hL-zl-K9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
